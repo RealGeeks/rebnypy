@@ -181,9 +181,9 @@ def expand_row(row):
     output = {}
     for k, v in row.items():
         if k in LOOKUPS:
-            output[k] = LOOKUPS[k].get(v,'UNKNOWN')
+            output[k] = LOOKUPS[k].get(v, 'UNKNOWN')
+        elif hasattr(v, 'items'):
+            output[k] = expand_row(v)
         else:
             output[k] = v
     return output
-
-

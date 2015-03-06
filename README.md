@@ -65,6 +65,7 @@ logging.getLogger().setLevel(logging.INFO)
 ```
 
 # Changelog
+* 0.1.1: Expand sub-dictionaries for lookups
 * 0.1.0: Strip all values that are just None
 * 0.0.3: Fix bug bug with new listings datetime
 * 0.0.2: Actually expose RebnyClient in the module
