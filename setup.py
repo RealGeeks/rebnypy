@@ -3,7 +3,7 @@
 from setuptools import setup
 
 setup(name='rebnypy',
-      version='0.1.1',
+      version='0.1.2',
       description="A Python library for interacting with the REBNY listing service",
       author='Kevin McCarthy',
       author_email='me@kevinmccarthy.org',

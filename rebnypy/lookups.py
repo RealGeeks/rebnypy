@@ -74,6 +74,22 @@ LOOKUPS = {
     "U":"Non­Stabilized Sublease",
 },
 
+# Docs say ListingStatus, but the data is actually Status.  So I'm duplicating this lookup here
+"Status": {
+    "A":"Active",
+    "B":"Board Approved",
+    "C":"Contract Signed",
+    "E":"Leases Signed",
+    "H":"TOM",
+    "I":"POM",
+    "J":"Exclusive Expired",
+    "L":"Leases Out",
+    "O":"Contract Out",
+    "P":"Offer Accepted/Application",
+    "R":"Rented",
+    "S":"Sold",
+},
+
 "ListingStatus": {
     "A":"Active",
     "B":"Board Approved",
