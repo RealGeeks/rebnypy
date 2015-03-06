@@ -17,7 +17,6 @@ setup(name='rebnypy',
       license='MIT',
       install_requires=['requests'],
       tests_require=['pytest','mock'],
-      cmdclass={'test': PyTest},
       classifiers=[
           'Environment :: Console',
           'Intended Audience :: Developers',
