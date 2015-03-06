@@ -65,6 +65,7 @@ logging.getLogger().setLevel(logging.INFO)
 ```
 
 # Changelog
+* 0.0.3: Fix bug bug with new listings datetime
 * 0.0.2: Actually expose RebnyClient in the module
 * 0.0.1: initial release
 

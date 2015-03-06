@@ -5,3 +5,8 @@ def test_client_all_listings():
     client = RebnyClient('http://idx-api.olr.com/api', environ['REBNY_API_KEY'])
     results = client.get_all_listings()
     assert len(results)
+
+def test_client_new_listings():
+    client = RebnyClient('http://idx-api.olr.com/api', environ['REBNY_API_KEY'])
+    results = client.get_new_listings()
+    assert len(results)

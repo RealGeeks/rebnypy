@@ -31,7 +31,7 @@ class RebnyClient(object):
         return self._get(url)
 
     def get_new_listings(self, hours_previous=24):
-        start_date = datetime.utcnow() - datetime.timedelta(hours=hours_previous)
+        start_date = datetime.datetime.utcnow() - datetime.timedelta(hours=hours_previous)
         return self.get_listings_by_date(start_date)
 
     def get_listing_by_id(self, listing_id):
