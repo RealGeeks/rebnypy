@@ -16,7 +16,7 @@ Use the `get_new_listings` method with your username and password.  This returns
 ```python
 import rebnypy
 
-c = rebnypy.RebnyClient('http://idx-olr.com/api','MY_API_KEY')
+c = rebnypy.RebnyClient('http://idx-api.olr.com/api','MY_API_KEY')
 
 for listing in c.get_new_listings(hours_previous=12):
     print listing
@@ -29,7 +29,7 @@ Basically the same thing as get new listings, but returns all of them!
 ```python
 import rebnypy
 
-c = rebnypy.RebnyClient('http://idx-olr.com/api','MY_API_KEY')
+c = rebnypy.RebnyClient('http://idx-api.olr.com/api','MY_API_KEY')
 
 for listing in c.get_all_listings(hours_previous=12):
     print listing
@@ -40,7 +40,7 @@ for listing in c.get_all_listings(hours_previous=12):
 ```python
 import rebnypy
 
-c = rebnypy.RebnyClient('http://idx-olr.com/api','MY_API_KEY')
+c = rebnypy.RebnyClient('http://idx-api.olr.com/api','MY_API_KEY')
 
 c.get_listing_by_id(1234)
 ```
