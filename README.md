@@ -1,4 +1,4 @@
-#rebnypy
+#rebnypy [![Build Status](https://travis-ci.org/RealGeeks/rebnypy.svg?branch=master)](https://travis-ci.org/RealGeeks/rebnypy)
 
 This is a python client for the real estate board of new york.
 
