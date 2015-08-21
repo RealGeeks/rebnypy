@@ -1,5 +1,4 @@
 import requests
-import datetime
 import logging
 from . import lookups
 
@@ -37,8 +36,7 @@ class RebnyClient(object):
         url = self.endpoint + '/listings'
         return self._get(url)
 
-    def get_new_listings(self, hours_previous=24):
-        start_date = datetime.datetime.utcnow() - datetime.timedelta(hours=hours_previous)
+    def get_new_listings(self, start_date):
         return self.get_listings_by_date(start_date)
 
     def get_listing_by_id(self, listing_id):

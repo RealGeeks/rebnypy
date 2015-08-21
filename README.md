@@ -18,7 +18,7 @@ import rebnypy
 
 c = rebnypy.RebnyClient('http://idx-api.olr.com/api','MY_API_KEY')
 
-for listing in c.get_new_listings(hours_previous=12):
+for listing in c.get_new_listings(start_date = datetime.datetime.utcnow() - datetime.timedelta(days=1))
     print listing
 ```
 
@@ -31,7 +31,7 @@ import rebnypy
 
 c = rebnypy.RebnyClient('http://idx-api.olr.com/api','MY_API_KEY')
 
-for listing in c.get_all_listings(hours_previous=12):
+for listing in c.get_all_listings()
     print listing
 ```
 
@@ -65,6 +65,7 @@ logging.getLogger().setLevel(logging.INFO)
 ```
 
 # Changelog
+* 1.0.0: Remove `hours_previous`, pass a `start_date` instead.
 * 0.1.2: Fix lookup for Status
 * 0.1.1: Expand sub-dictionaries for lookups
 * 0.1.0: Strip all values that are just None
