@@ -1,5 +1,6 @@
 import requests
 import logging
+import datetime
 from . import lookups
 
 logger = logging.getLogger(__name__)
@@ -36,7 +37,9 @@ class RebnyClient(object):
         url = self.endpoint + '/listings'
         return self._get(url)
 
-    def get_new_listings(self, start_date):
+    def get_new_listings(self, start_date=None):
+        if not start_date:
+            start_date = datetime.datetime.utcnow() - datetime.timedelta(days=1)
         return self.get_listings_by_date(start_date)
 
     def get_listing_by_id(self, listing_id):
