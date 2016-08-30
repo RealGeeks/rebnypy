@@ -31,6 +31,8 @@ class RebnyClient(object):
 
     def _get(self, url):
         rows = self._request(url)
+        if isinstance(rows, dict): # only 1 row returned
+            return strip_nones(rows)
         return [strip_nones(lookups.expand_row(r)) for r in rows]
 
     def get_all_listings(self):
