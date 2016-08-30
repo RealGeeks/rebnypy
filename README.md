@@ -65,6 +65,7 @@ logging.getLogger().setLevel(logging.INFO)
 ```
 
 # Changelog
+* 1.0.1: Fix bug with single listing
 * 1.0.0: Remove `hours_previous`, pass a `start_date` instead.
 * 0.1.2: Fix lookup for Status
 * 0.1.1: Expand sub-dictionaries for lookups
