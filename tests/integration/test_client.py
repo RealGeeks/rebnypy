@@ -3,7 +3,7 @@ from rebnypy.client import RebnyClient
 
 def test_client_one_listing():
     client = RebnyClient('http://idx-api.olr.com/api', environ['REBNY_API_KEY'])
-    results = client.get_listing_by_id('RLMX-008160021374')
+    results = client.get_listing_by_id('RPLU-641314385854')
     assert len(results)
 
 def test_client_new_listings():
